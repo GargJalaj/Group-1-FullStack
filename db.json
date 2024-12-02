@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "e9f2",
+      "username": "Mounik",
+      "password": "1234",
+      "highscore": 10
+    },
+    {
+      "id": "2791",
+      "username": "Q",
+      "password": "1234",
+      "highscore": 8
+    }
+  ]
+}

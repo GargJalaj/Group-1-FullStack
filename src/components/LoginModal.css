@@ -1,0 +1,107 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Darker overlay for better contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px); /* Add a blur effect to the background */
+  }
+  
+  .modal-content {
+    background: #ff5959;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%; /* Makes it responsive for smaller screens */
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .modal-content h2 {
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .modal-content input {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 15px auto;
+    padding: 12px;
+    font-family: 'Press Start 2P', cursive;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f0f0f0;
+    transition: all 0.3s ease;
+  }
+  
+  .modal-content input:focus {
+    border-color: #606dcd;
+    background: #ffffff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(96, 109, 205, 0.3);
+  }
+  
+  .modal-content button {
+    margin: 10px 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background: #606dcd;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .modal-content button:hover {
+    background: #4e58b8;
+    transform: scale(1.05);
+  }
+  
+  .close-button {
+    background: #e74c3c;
+  }
+  
+  .close-button:hover {
+    background: #c0392b;
+  }
+  
+  .modal-content button:active {
+    transform: scale(0.95);
+  }
+  
+  .modal-content .switch-button {
+    background: transparent;
+    color: #606dcd;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+  
+  .modal-content .switch-button:hover {
+    color: #5050b0;
+    text-decoration: none;
+  }
+  

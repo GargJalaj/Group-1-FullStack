@@ -1,0 +1,99 @@
+/* Full-screen container for the quiz */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-color:  	#ffde00; /* Softer, more modern background color */
+  font-family: 'Press Start 2P', cursive;
+  color: #ff5959;
+  text-align: center;
+  padding: 20px; /* Prevent content from touching screen edges */
+  box-sizing: border-box; /* Include padding in height and width */
+}
+
+/* Pokémon image styling */
+.quiz-container img {
+  width: 300px; /* Larger Pokémon image */
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 25px;
+  animation: fadeIn 1.2s ease-in-out; /* Add smooth fade-in for image */
+}
+
+/* Fade-in animation for Pokémon image */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Question text */
+.quiz-container h2 {
+  font-size: 2.2rem; /* Slightly larger for better readability */
+  font-family: 'Press Start 2P', cursive;
+  color: #2c3e50; /* Darker text for contrast */
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+.timer{
+  margin-bottom: -5px;
+  margin-top: -50px;
+}
+
+
+
+/* Option buttons */
+.quiz-container button {
+  background-color: #3e8e41; /* Green button */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-family: 'Press Start 2P', cursive;
+  margin: 10px; /* Space between buttons */
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 250px; /* Fixed width for buttons */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.quiz-container button:hover {
+  background-color: #3b4cca; /* Darker green * /
+  transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+  transform: scale(1.1);
+}
+
+/* Button active state */
+.quiz-container button:active {
+  transform: scale(0.95);
+  background-color: #281ccd; /* Even darker green for active state */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .quiz-container img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .quiz-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .quiz-container button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    width: 180px; /* Smaller buttons for smaller screens */
+  }
+}

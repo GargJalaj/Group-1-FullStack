@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: absolute;
+  
+  width: 100vw;
+  left: 100px;
+  top: 30px;
+}
+.user-greeting {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+}
+
+.user-greeting:hover {
+  color: #606dcd;
+
+}
+
+/* Popup/modal for user options */
+.user-options-popup {
+  font-family: 'Press Start 2P', cursive;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff5959;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.user-options-popup button {
+  font-family: 'Press Start 2P', cursive;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background: #606dcd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-options-popup button:hover {
+  background: #5050b0;
+}
+
+.user-options-popup button:last-child {
+  background: #606dcd;
+}
+
+.user-options-popup button:last-child:hover {
+  background: #5050b0;
+}
+nav a {
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 1150px;
+}
+nav a:hover {
+  color: #606dcd;
+}
+
+.banner-area h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff5959;
+  font-size: 70px;
+  margin-bottom: 400px;
+  margin-top: 100px;
+}
+.hs{
+  color:#1e5220 ;
+}
+.banner-area {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/public/images/backg.gif); /* Use local image */
+  display:flex;
+  
+  background-position: center;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 2vw;
+  color: #fff;
+}
+
+.start-button {
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+  color: #606dcd;
+  border: none;
+  background: transparent;
+  transition: 0.6s ease;
+  animation: animate 2s 1;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 3cm;
+  
+}
+.start-button a {
+  text-decoration: none; /* Remove underline from anchor tags */
+  color: inherit; /* Make sure anchor text color matches the button text */
+}
+
+.start-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    left: 10px;
+  }
+  nav a {
+    font-size: 11px;
+    margin-right: 7px;
+  }
+  .banner-area h2 {
+    font-size: 28px;
+  }
+}
